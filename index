@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>노윤호</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  </head>
+  <body>
+    <section id="main">
+      <div class="inner">
+        <nav>
+          <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt="로고" /></a>
+            
+          </div>
+          <div class="nav_right">
+            <ul>
+              <a href="#about"><li>About</li></a>
+              <a href="#skills"><li>Skills</li></a>
+              <a href="#project"><li>Project</li></a>
+              <a href="#experience"><li>Experience</li></a>
+              <a href="#simpleWebApplication"><li>Simple Web Application</li></a
+                >
+            </ul>
+            <div class="logo__github">
+              <a href="https://github.com/Nyoonho/3-Grade">
+                <img src="./images/logo__github.png" alt="github로고" />
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="main__title">
+          <div class="main__title-text">
+            <h1>“풀스택 개발자가 되고싶은 저를 소개합니다.”</h1><br>
+            <h2>저는 AI 머신러닝 데이터사이언스에 관심이 많습니다.</h2>
+            <h2>제 좌우명은 “더 겸손할수록, 더 빨리 발전할 것이다.” 입니다.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section__title">About</div>
+      <div class="inner">
+        <div class="about__container">
+          <div class="about__image">
+            <img src="./images/profile_image.png" alt="프로필 사진" />
+          </div>
+          <div class="about__text">
+            <div class="profile__box">
+              <div class="profile">
+                <div class="name">
+                  <p>노윤호</p>
+                  <p class="date">1999. 02. 03</p>
+                </div>
+                <p>이메일: nyh6547@naver.com</p>
+                <p>주소: 대전 대덕구 동춘당로 114번길 60</p>
+                <p>학력: 홍익대학교 세종캠퍼스</p>
+                <p>Github :<a href="https://github.com/Nyoonho/3-Grade"> github.com/Nyoonho/3-Grade</a></p>
+                
+              </div>
+            </div>
+            <div class="profile__box-right">
+              <p>전화번호: 010-9221-1706</p>
+              <p>sns: 인스타그램 @no.no._.no</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="section__title">Skills</div>
+      <div class="inner">
+        <div class="skills__container">
+          <p class="skills__text">사용가능 프로그래밍 언어입니다.</p>
+          <div class="skills__bar-wrap">
+            <div class="bar__text">파이썬</div>
+            <div class="bar">
+            <progress id="progress" value="90" min="0" max="100"></progress>90%
+          </div>
+        </div>
+          <div class="skills__bar-wrap">
+            <div class="bar__text">C</div>
+            <div class="bar">
+            <progress id="progress" value="60" min="0" max="100"></progress> 60%
+          </div>
+        </div>
+          <div class="skills__bar-wrap">
+            <div class="bar__text">R</div>
+            <div class="bar">
+            <progress id="progress" value="70" min="0" max="100"></progress> 70%
+          </div>
+        </div>
+          <div class="skills__bar-wrap">
+            <div class="bar__text">자바</div>
+            <div class="bar">
+            <progress id="progress" value="60" min="0" max="100"></progress> 60%
+          </div>
+        </div>
+          <div class="skills__bar-wrap">
+            <div class="bar__text">html</div>
+            <div class="bar">
+            <progress id="progress" value="70" min="0" max="100"></progress> 70%
+          </div>
+        </div>
+          <div class="skills__bar-wrap">
+            <div class="bar__text">css</div>
+            <div class="bar">
+            <progress id="progress" value="60" min="0" max="100"></progress> 60%
+          </div>
+        </div>
+          <div class="skills__bar-wrap">
+            <div class="bar__text">Js</div>
+            <div class="bar">
+            <progress id="progress" value="50" min="0" max="100"></progress> 50%
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <div class="section__title">Project</div>
+      <div class="inner">
+        <div class="project__container">
+          <div class="project__title">복지어플</div>
+          <div class="project__content-box">
+            <div class="slide">
+              <div class="single-item-01">
+                <div><img src="./images/1.PNG" alt="이미지-1" /></div>
+                <div><img src="./images/2.PNG" alt="이미지-2" /></div>
+                <div><img src="./images/3.PNG" alt="이미지-3" /></div>
+                <div><img src="./images/4.PNG" alt="이미지-4" /></div>
+                <div><img src="./images/5.PNG" alt="이미지-5" /></div>
+                <div><img src="./images/6.PNG" alt="이미지-6" /></div>
+                <div><img src="./images/7.PNG" alt="이미지-7" /></div>
+                <div><img src="./images/8.PNG" alt="이미지-8" /></div>
+              </div>
+              <div class="slick_arrow slick-prev-01"><</div>
+              <div class="slick_arrow slick-next-01">></div>
+            </div>
+            <div class="project__text">
+              <p>
+                창의적 공학설계입문 수업 프로잭트로 개발보다 설계 과정을 중점적으로 진행하여 기본적인 구성까지만 만든 프로젝트로
+                2030 세대를 중심으로 주거, 고용, 교육, 건강 등 복지 관련내용을 한번에 확인할 수 있는 어플리케이션입니다.
+                <br/>청년 들에게 필요한 정보를 모아서 쉽게 찾아볼수 있도록 개발을 목 표로 했습니다.<br/>
+                <br/>Android Studio를 통해서 front end 레이아웃 구현하였고, back end 는 자바로 구현하였습니다. 
+              </p>
+            </div>
+          </div>
+          <div class="project__detail">
+            <p>프로젝트에 사용된 기술 스택 : 브레인스토밍 , android studio</p>
+            <p>프로젝트 기간 : 2021. 04 ~ 2021. 06</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <div class="section__title">Project</div>
+      <div class="inner">
+        <div class="project__container">
+          <div class="project__title">포트폴리오 웹사이트</div>
+          <div class="project__content-box">
+            <div class="slide">
+              <div class="single-item-02">
+                <div><img src="./images/aa.PNG" alt="이미지-1" /></div>
+                <div><img src="./images/bb.PNG" alt="이미지-2" /></div>
+                <div><img src="./images/cc.PNG" alt="이미지-3" /></div>
+              </div>
+              <div class="slick_arrow slick-prev-02"><</div>
+              <div class="slick_arrow slick-next-02">></div>
+            </div>
+            <div class="project__text">
+              <p>미래의 포트폴리오를 용도로 제작해본 웹사이트입니다. 지금 보는 화면이 웹사이트에 해당합니다. <br />웹프로그래밍 수업의 파이널 프로젝트로 HTML, CSS Java Script 로 구현했습니다.</p>
+            </div>
+          </div>
+          <div class="project__detail">
+            <p>프로젝트에 사용된 기술 : HTML,CSS, Java Script</p>
+            <p>프로젝트 기간 : 2020.05 ~ 2020.06 (약 한달간)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <div class="section__title">Experience</div>
+      <div class="inner">
+        <section class="timeline">
+          <ol>
+            <li>
+              <div><time>2023</time></div>
+            </li>
+            <li>
+              <div>대학교 졸업 프로젝트</div>
+            </li>
+            <li>
+              <div>
+                <time>2024</time>
+              </div>
+            </li>
+            <li>
+              <div>당근마켓 프로젝트 참여</div>
+            </li>
+            <li>
+              <div>
+                <time>2028</time>
+              </div>
+            </li>
+            <li>
+              <div>구글 취업</div>
+            </li>
+            <li>
+              <div>
+                <time>2031</time>
+              </div>
+            </li>
+            <li>
+              <div>
+                <time class="future">FUTURE >> </time>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </section>
+    <section id="simpleWebApplication">
+      <div class="section__title">Simple Web Application</div>
+      <div class="inner">
+        <div class="simpleWebApplication__title-1">
+          <a href="구구단.html"> 1. 구구단(20단) application <span class="clickme">(click)</span> </a>
+          <div class="simple-content">
+            <img src="./images/abc.png" alt="이미지-1" />
+            <p class="simpleWebApplication__title__content">
+              만든목적: 구구단을 쉽게 보기위해 만들어보았습니다.
+              <br />내용: 1단부터 20단 까지 구구단을 출력 해줍니다.<br /> <br />사용방법 : 원하는 단을 선택하면 바로 출력되고 삭제버튼이있어 출력된 구구단을 삭제할 수있습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="simpleWebApplication__title-2">
+          <a href="makeTeam/index.html"> 2. 팀 만들기 application <span class="clickme">(click)</span></a>
+          <div class="simple-content">
+            <img src="./images/cde.png" alt="이미지-2" />
+            <p class="simpleWebApplication__title__content">
+            만든목적: 스포츠및 게임 안에서 2개의 팀을짤 때 편하도록만들어보았습니다.
+            <br />내용 : 최대 10명의 사람으로 두 개의 팀으로 나눠준다. 개개인의 능력치도 넣을 수있어 팀평균 능력치도 알 수있다. <br />
+            <br />사용방법: 사람의 이름과 능력치를 입력후 팀만들기 버튼을 누르면
+            자동으로 팀이 계속 생성됩니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer__container">
+        <div class="inner">
+          <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt="로고" /></a>
+          </div>
+          <div class="footer__right">
+            <a href="http://"><div class="btn_gotop">TOP</div></a>
+            <p class="copyrights">Copyrightⓒ2022 All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // slick slide구현 - project 01 슬라이드
+      $(".single-item-01").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: false,
+        speed: 500,
+
+        arrows: true,
+        prevArrow: $(".slick-prev-01"),
+        nextArrow: $(".slick-next-01"),
+        dots: false,
+      });
+      // slick slide구현 - project 02 슬라이드
+      $(".single-item-02").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: false,
+        speed: 500,
+
+        arrows: true,
+        prevArrow: $(".slick-prev-02"),
+        nextArrow: $(".slick-next-02"),
+        dots: false,
+      });
+    </script>
+    <script>
+      // Top누르면 상단으로 이동
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
+        }
+      });
+      $(".btn_gotop").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 400);
+        return false;
+      });
+    </script>
+  </body>
+</html>
