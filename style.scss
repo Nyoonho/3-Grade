@@ -1,0 +1,383 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+#main,
+#about,
+#skills,
+#project,
+#experience,
+#simpleWebApplication {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#about,
+#skills,
+#project,
+#experience,
+#simpleWebApplication {
+  background-color: #eff4ff;
+}
+.inner {
+  width: calc(100vw - 540px);
+  margin: 0 auto;
+}
+
+// main section
+
+// gnb
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0;
+    margin-right: 10px;
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 6px;
+    }
+    li {
+      padding: 10px;
+    }
+    cursor: pointer;
+  }
+}
+.nav_right {
+  display: flex;
+  align-items: center;
+}
+
+.main__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 18px;
+  .main__title-text {
+    line-height: 50px;
+  }
+}
+#about,
+#skills,
+#simpleWebApplication {
+  .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// about section
+.section__title {
+  font-size: 30px;
+  padding: 100px;
+  padding-bottom: 50px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__image {
+  img {
+    width: 400px;
+    height: 600px;
+  }
+}
+.about__text {
+  margin-left: 250px;
+  display: flex;
+  p {
+    margin-bottom: 30px;
+  }
+}
+.profile__box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  display: flex;
+  align-items: flex-end;
+  font-size: 30px;
+  .date {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+
+// skills section
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills__text {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.skills__bar-wrap {
+  margin-bottom: 30px;
+  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+}
+.bar__text {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+// progress bar 커스텀
+.bar {
+  text-align: center;
+}
+progress {
+  -webkit-appearance: none;
+  width: 90%;
+  margin-right: 10px;
+}
+
+::-webkit-progress-bar {
+  background-color: rgb(209, 209, 209);
+  border-radius: 25px;
+}
+
+::-webkit-progress-value {
+  background-color: rgb(63, 63, 63);
+  border-radius: 25px;
+}
+
+// project section
+.project__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.project__content-box {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.project__detail {
+  line-height: 30px;
+}
+
+// slick 슬라이드 구현
+.slide {
+  position: relative;
+  margin-bottom: 50px;
+}
+.single-item-01,
+.single-item-02 {
+  width: 855px;
+  height: 507px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 30%;
+  font-size: 30px;
+  color: rgb(23, 23, 23);
+  display: flex;
+  align-items: center;
+  padding: 70px 20px;
+  cursor: pointer;
+  &.slick-prev-01,
+  &.slick-prev-02 {
+    left: 0%;
+  }
+  &.slick-next-01,
+  &.slick-next-02 {
+    right: 0%;
+  }
+}
+
+.project__text {
+  text-align: center;
+  line-height: 30px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+// timeline 연대표 구현
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #5b5b5b;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  padding: 15px;
+  font-size: 1rem;
+  color: #5b5b5b;
+  border: 2px solid #5b5b5b;
+  border-radius: 25px;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+// simpleWebApplication section
+
+.simple-content {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+.simpleWebApplication__title-1,
+.simpleWebApplication__title-2 {
+  margin-top: 40px;
+  a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 15px;
+    .clickme {
+      font-size: 15px;
+    }
+  }
+  p {
+    margin-left: 50px;
+  }
+}
+
+.simpleWebApplication__title__content {
+  line-height: 30px;
+}
+
+// footer section
+#footer {
+  position: relative;
+  .footer__container {
+    position: absolute;
+    border-top: 1px solid rgb(98, 98, 98);
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 100px;
+    }
+  }
+
+  // top누르면 상위로 이동
+  .btn_gotop {
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+  }
+}
